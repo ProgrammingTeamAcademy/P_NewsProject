@@ -1,0 +1,26 @@
+@import url(https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,html { 
+ min-height: 100vh;
+}
+
+
+button, .link-btn {
+    @apply !outline-none px-2 py-1 rounded-[4px] duration-100 focus-visible:ring-4
+}
+
+/* this helps with lastpass addon (one of firefox addons used to mange passwords) you may not be able to see it's effect on the site */
+.right-margin [data-lastpass-icon-root] {
+    right: 25px;
+}
